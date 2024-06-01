@@ -472,6 +472,9 @@ body {
 }
 
 
+
+
+
 .food-title {
 
 
@@ -525,9 +528,10 @@ body {
 }
 
 .food-description .food-price {
-  color: #67bcb8;
-  font-weight: 700;
- 
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 24px;
+  
 }
 
 
@@ -916,7 +920,7 @@ body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
-    background: linear-gradient(315deg, rgb(15, 10, 14) 3%, rgb(154, 156, 159) 38%, rgb(189, 196, 196) 68%, rgb(111, 110, 110) 98%);
+    background: linear-gradient(315deg, rgba(25, 24, 25, 0.919) 3%, rgb(154, 156, 159) 38%, rgb(181, 187, 187) 68%, rgb(111, 110, 110) 98%);
     animation: gradient 10s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
