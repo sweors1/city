@@ -784,7 +784,7 @@ body {
   .logo {
     position: absolute;
     top: 4px;
-    right: 15px;
+    right: -20px;
     font-size: 2rem;
     color: #ce2a2a;
     
@@ -895,7 +895,7 @@ body {
   .logo {
     position: absolute;
     top: -11px;
-    right: -7px;
+    right: 1px;
     font-size: 3rem;
    
   }
