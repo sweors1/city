@@ -1,274 +1,1083 @@
-<html lang="en">
-    <link href="cafecss.css" rel="stylesheet" type="text/css">
-    <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizza city</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="pizza.css" />
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ///////////..utility classes../////////// */
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #117964;
+  transition: background 0.3s ease-in-out;
+ 
+}
+
+/* ............/navbar/............ *
+
+/* desktop mode............/// */
+
+.navbar input[type="checkbox"]{
+    background: #ffffff;
+}
+.navbar .hamburger-lines {
+  display: none;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #ff000056;
+  position: fixed;
+  width: 100%;
+  background: #1c1c1c;
+  color: #000;
+  opacity: 0.85;
+  height: 50px;
+  z-index: 12;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  list-style: none;
+  margin-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: #117964;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 2.3rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+
+
+.logo-img {
+
+    width: 100px;
     
-</head>
-
-
-<body>
-    <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <ul class="menu-items">
-                
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#about">عنا</a></li>
-                <li><a href="#food-menu">منيو</a></li>       
-                <li><a href="https://www.instagram.com/pizza_city_jo/">الانساقرام</a></li>
-                <li><a href="https://maps.app.goo.gl/Xh7UxaUfQ1Q3mDKY8">موقعنا</a></li>
-                <li><a href="tel+962777912069">للتواصل</a></li>
-                <li><a href="#food-menu"></a></li>   
-                <li><a href="#food-menu"></a></li> 
-                <li><a href="#food-menu"></a></li>   
-                <li><a href="#food-menu"></a></li> 
-                <li><a href="#food-menu"></a></li>   
-                <li><a href="#food-menu"></a></li> 
-                <li><a href="#food-menu"></a></li>   
-                <li><a href="#food-menu"></a></li> 
-                <li><a href="#food-menu"></a></li>   
-              
-                
-                <img class="logo-img" src="icon.jpeg">
-                
-            </ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <!-- .................../ logo /...................... -->
-          
-            <h1 class="logo">بيتزا سيتي</h1>
-          
-           </div>
-
-
-
-
-        </div>
-    </nav>
-    <section class="showcase-area" id="showcase">
-        <div class="showcase-container">
-            <h1 class="main-title" id="home">It’s 🍕 o’clock</h1>
-            <p>احلى طعم بس عنا</p>
-            <a href="#food-menu" class="btn btn-primary">المنيو</a>
-        </div>
-    </section>
-
-    <section id="about">
-        <div class="about-wrapper container">
-            <div class="about-text">
-                <p class="small">عنا</p>
-                <h2>! طعم, جودة, اسعار بس عنا </h2>
-                <p>
-                  بيتزا سيتي
-                </p>
-            </div>
-            <div class="about-img">
-                <img src="https://i.pinimg.com/originals/d3/19/9b/d3199b95694f4c531010016d5290412a.jpg" alt="food" />
-            </div>
-        </div>
-    </section>
-    <section id="food">
-        <h2>بيتزا سيتي </h2>
-        <div class="food-container container">
-            <div class="food-type fruite">
-                <div class="img-container">
-                    <img src="https://img.freepik.com/premium-photo/authentic-homemade-italian-margherita-pizza_908985-50629.jpg" alt="error" />
-                  
-                </div>
-            </div>
-            <div class="food-type vegetable">
-                <div class="img-container">
-                    <img src="https://t3.ftcdn.net/jpg/06/41/67/98/360_F_641679893_MQ4NzEPR6Am2ZIvHKUmDj5aW10MwcWhb.jpg" alt="error" />
-                    <div class="img-content">
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="food-type grin">
-                <div class="img-container">
-                    <img src="https://th.bing.com/th/id/OIP.r4Q4W5H7QBKndK2j-41j2wAAAA?w=474&h=316&rs=1&pid=ImgDetMain" alt="error" />
-                    <div class="img-content">
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <h2 class="food-menu-heading">ㅤ</h2>
-    <h2 class="food-menu-heading">ㅤ</h2>
-
-
-     
-
-
-
-    <section id="food-menu">
-        <h2 class="food-menu-heading">المنيو</h2>
-      
-        <section id="food-menu">
-
-         
-            
-            <div class="food-menu-container container">
-             
-                    <div class="food-menu-item">
-                        <div class="food-img">
-                            <a href="https://sweors1.github.io/city/pizzapizza.html" class="food-link">
-                                <img src="https://th.bing.com/th/id/OIP.RfJpa_L_NT3KC_oIl4EssQAAAA?rs=1&pid=ImgDetMain" alt="" />
-                            </div>
-                            <div class="food-description">
-                                <h2 class=""></h2>
-                                <p>تشكين وينقز</p>
-                                <p class="food-price"></p>
-                            </div>
-                        </div>
-                    </a>
-                
-                
-                
-                <h2 class="food-menu-heading">ㅤ</h2>
-
-
-                <a href="https://sweors1.github.io/city/wings.html" class="food-link">
-                    <div class="food-menu-item">
-                        <div class="food-img">
-                            <img src="https://cdn.apartmenttherapy.info/image/fetch/f_auto,q_auto:eco,c_fill,g_auto,w_1500/https://storage.googleapis.com/gen-atmedia/3/2019/03/83b334a342c8a158b6af68716920bd4c1852c9f1.jpeg" alt="" />
-                    </div>
-                    <div class="food-description">
-                        <h2 class=""></h2>
-                        <p>بيتزا</p>
-                        <p class="food-price"></p>
-                    </div>
-                </div>
-            </a>
-                </a>
-                <h2 class="food-menu-heading">ㅤ</h2>
-             
-
-                <a href="https://sweors1.github.io/city/calzone.html" class="food-link">
-                    <div class="food-menu-item">
-                        <div class="food-img">
-                            <img src="https://th.bing.com/th/id/OIP.Pavz64omAV0ypZMkNcRk7gAAAA?rs=1&pid=ImgDetMain" alt="" />
-                    </div>
-                    <div class="food-description">
-                        <h2 class=""></h2>
-                        <p>كالزوني</p>
-                        <p class="food-price"></p>
-                    </div>
-                </div>
-            </a>
     
-              </div>
-            
-        
-            
+}
 
 
+.logo-img1 {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </section>
+    width: 50px;
     
-       
-        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* first wallpaper css down >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+
+
+
+/* ............//// Showcase styling ////......... */
+
+.showcase-area {
+  height: 50vh;
+  background: linear-gradient(
+      rgba(21, 21, 21, 0.943),
+      rgba(133, 133, 133, 0.336)
+    ),
+    url("https://images8.alphacoders.com/101/thumb-1920-1011433.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #c6c6c623;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    color: #fff;
+}
+
+.main-title {
+  text-transform: uppercase;
+  margin-top: 1.5em;
+  font: bold;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+/* ......//about us//...... */
+
+#about {
+  padding: 50px 0;
+  background: #000000;
+  
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#about h2 {
+  font-size: 2.3rem;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+#about .small {
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.about-img {
+  flex: 1 1 400px;
+  padding: 30px;
+  transform: translateX(150%);
+  animation: about-img-animation 1s ease-in-out forwards;
+}
+
+@keyframes about-img-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-text {
+  flex: 1 1 400px;
+  padding: 30px;
+  margin: auto;
+  transform: translate(-150%);
+  animation: about-text-animation 1s ease-in-out forwards;
+  color: #fff;
+}
+
+@keyframes about-text-animation {
+  100% {
+    transform: translate(0);
+  }
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  max-width: 100%;
+  margin: auto;
+  object-fit: cover;
+  object-position: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ..........////Food category///........... */
+
+#food {
+  padding: 5rem 0 10rem 0;
+}
+
+#food h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.food-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-container img {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-container {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.img-content {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 2;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0.1s;
+}
+
+.img-content h3 {
+  color: #fff;
+  font-size: 2.2rem;
+}
+
+.img-content a {
+  font-size: 1.2rem;
+}
+
+.img-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.871);
+  opacity: 0;
+  z-index: 1;
+
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.img-container:hover .img-content {
+  opacity: 1;
+  top: 40%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .........../Food Menu/............ */
+
+.food-menu-heading {
+  text-align: center;
+  font-size: 3.4rem;
+  font-weight: 400;
+  color: #000000;
+  text-shadow: 0.5px 0.5px;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+ 
+}
+
+.food-menu-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.food-menu-item {
+  display: flex;
+  flex: 1 1 600px;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+  width: 500px;
+  height: 400px;
+  
+}
+
+
+
+
+
+.food-title {
+
+
+    font-size: 5em;
+  background-color: #a8a8a8;
+  color: white;
+  width: 8em;
+  height: 2em;
+  line-height: 2;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.food-nigga {
+
+    position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.food-description {
+  margin: auto 1.5rem;
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+   font-size: 20px;
+
+}
+
+.font-title {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #ffffff;
+  
+}
+
+.food-description p {
+  font-size: 28px;
+  color: #000000;
+  font-weight: 500;
+  
+}
+
+.food-description .food-price {
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 24px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ........./ Testimonial /.......... */
+
+#testimonials {
+  padding: 5rem 0;
+  background: rgba(243, 243, 243);
+  font-family: "Noto Sans Arabic", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.testimonial-title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 400;
+  color: #555;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.testimonial-box .checked {
+  color: #ff9529;
+}
+
+.testimonial-box .testimonial-text {
+  margin: 1rem 0;
+  color: #444;
+}
+
+.testimonial-box {
+  text-align: center;
+  padding: 1rem;
+}
+
+.customer-photo img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* ........ Contact Us........... */
+
+#contact {
+  padding: 5rem 0;
+  background: rgb(226, 226, 226);
+}
+
+.contact-container {
+  display: flex;
+  background: #fff;
+}
+
+.contact-img {
+  width: 50%;
+}
+
+.contact-img img {
+  display: block;
+  height: 400px;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.form-container {
+  padding: 1rem;
+  width: 50%;
+  margin: auto;
+}
+
+.form-container input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: white;
+  border-bottom: 2px solid #ddd;
+  color: #444;
+  outline: none;
+  padding: 1rem 0;
+  resize: none;
+}
+
+.form-container h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: -1.2rem;
+}
+
+.form-container a {
+  font-size: 1.3rem;
+}
+
+#footer h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 2.6rem;
+  font-weight: 500;
+  color: #fff;
+  background: rgb(111, 133, 146);
+}
+
+/* ......../ media query /.......... */
+
+@media (max-width: 768px) {
+  .navbar {
+    opacity: 0.95;
+  }
+
+  .navbar-container input[type="checkbox"],
+  .navbar-container .hamburger-lines {
+    display: block;
+  }
+
+  .navbar-container {
+    display: block;
+    position: relative;
+    height: 64px;
+  }
+
+  .navbar-container input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    color: #fff;
+  }
+
+  .navbar-container .hamburger-lines {
+    display: block;
+    height: 23px;
+    width: 35px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
-    <h2 class="food-menu-heading">ㅤ</h2>
-    <h2 class="food-menu-heading">ㅤ</h2>
-    <h2 class="food-menu-heading">ㅤ</h2>
-    <h2 class="food-menu-heading">ㅤ</h2>
-    <h2 class="food-menu-heading">ㅤ</h2>
+  }
+
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  .navbar-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+    background-color: #f5f5f7;
+  }
+
+  .navbar-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+    background-color: #f5f5f7;
+  }
+
+  .navbar-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+    background-color: #f5f5f7;
+  }
+  
+
+
+  .navbar .menu-items {
+    padding-top: 100px;
+    background: #a50c0cf1;
+    height: 100vh;
+    max-width: 300px;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0px #aaa;
+  }
+
+  .navbar .menu-items li {
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  .logo {
+    position: absolute;
+    top: 4px;
+    right: 15px;
+    font-size: 2rem;
+    color: #ce2a2a;
+    
+ font-family: "Noto Sans Arabic", sans-serif;
+ font-optical-sizing: auto;
+ font-weight: 600;
+ font-style: normal;
+ font-variation-settings:
+   "wdth" 100;
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .menu-items {
+    transform: translateX(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+    transform: rotate(35deg);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+    transform: scaleY(0);
+  }
+
+  .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+    transform: rotate(-35deg);
+  }
+
+  /* ......./ food /......... */
+
+  .food-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .food-type:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .food-type {
+    box-shadow: 5px 5px 10px 0 #aaa;
+  }
+
+  .img-container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 65%;
+  }
+
+  .navbar .menu-items li {
+    font-size: 1.6rem;
+  }
+
+  .testimonial-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .food-menu-container img {
+    margin: auto;
+  }
+
+  .food-menu-item {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+
+
+
+
+  .food-link {
+    display: block;
+    text-align: center; /* Align link content (div) to center */
+}
+
+.food-menu-item {
+    width: 360px; /* Set width as per your design */
+    margin: 0 auto; /* Center the div horizontally */
+}
+
+/* Additional styles for better appearance */
+.food-menu-item .food-img img {
+    max-width: 100%; /* Make sure the image doesn't exceed its container */
+}
+
+
+
+
+  .form-container {
+    width: 90%;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-img {
+    width: 90%;
+    margin: 3rem auto;
+  }
+
+  .logo {
+    position: absolute;
+    top: -11px;
+    right: 1px;
+    font-size: 3rem;
    
-</html>
+  }
 
-</body>
+  .navbar .menu-items li {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .img-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .img-container .btn {
+    font-size: 0.7rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .showcase-area {
+    height: 50vmax;
+  }
+}
 
 
 
 
-    <div class="contact-container container">
-        <div class="contact-info">
-            <a href="https://maps.app.goo.gl/2jRF8DNoQ79JBW59A" target="_blank">
-                <img src="https://www.bee-firepro.co.uk/_webedit/cached-images/63.png" alt="jps" class="jps-img">
-            </a>
-        </div>
-    </div>
-    
-
-<footer id="footer">
-    <div class="contact-container container">
-        <div class="contact-info">
-            <h3>Contact Us</h3>
-            <p>Email: <a href="mailto:info@shamscafe.com">Pizzacity@gmail.com</a></p>
-            <p>Phone: <a href="tel:+962777912069">+962777912069</a></p>
-        </div>
 
 
-        
 
-        
 
-</html>
 
+
+
+
+
+
+
+
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, hsla(47, 77%, 60%, 0.918) 3%, hsl(216, 3%, 61%) 38%, #b12828 68%, rgb(111, 110, 110) 98%);
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.jps-img {
+    position: fixed;
+    top: 600px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    width: 70px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 999; /* Ensure it's above other content */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS for Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9b030300;
+    width: 450px;
+    height: 140px;
+}
+
+.contact-info {
+  text-align: center;
+  
+}
+
+.contact-info h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #000000; /* Green color */
+  font-weight: bold;
+ 
+  
+}
+
+.contact-info p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #000000; /* Green color */
+}
+
+.contact-info a {
+  color: #000000; /* Link color */
+  font-size: 18px;
+}
