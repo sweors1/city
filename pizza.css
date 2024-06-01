@@ -892,13 +892,7 @@ body {
     margin: 3rem auto;
   }
 
-  .logo {
-    position: absolute;
-    top: -11px;
-    right: 35px;
-    font-size: 3rem;
-   
-  }
+ 
 
   .navbar .menu-items li {
     margin-bottom: 2.5rem;
