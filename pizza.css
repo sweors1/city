@@ -1061,10 +1061,12 @@ body {
   
 }
 
+
 .contact-info h3 {
   font-size: 28px;
+  font-style: bold;
   margin-bottom: 20px;
-  color: #000000; /* Green color */
+  color: #fffefe; /* Green color */
   font-weight: bold;
  
   
@@ -1073,10 +1075,14 @@ body {
 .contact-info p {
   margin: 10px 0;
   font-size: 18px;
-  color: #000000; /* Green color */
+  font-style: bold;
+  color: #ffffff; /* Green color */
+  font-weight: 600;
 }
 
 .contact-info a {
-  color: #000000; /* Link color */
+  color: #ffffff; /* Link color */
   font-size: 18px;
+  font-style: bold;
 }
+
