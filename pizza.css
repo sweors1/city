@@ -787,6 +787,7 @@ body {
     right: -20px;
     font-size: 2rem;
     color: #ce2a2a;
+  }
     
  font-family: "Noto Sans Arabic", sans-serif;
  font-optical-sizing: auto;
@@ -892,11 +893,11 @@ body {
     margin: 3rem auto;
   }
 
-  .logo {
+ .logo {
     position: absolute;
     top: -11px;
-    right: 55px;
-    font-size: 3.5rem;
+    right: 15px;
+    font-size: 2.9rem;
    
   }
 
