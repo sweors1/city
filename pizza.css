@@ -450,8 +450,8 @@ body {
   text-align: center;
   font-size: 3.4rem;
   font-weight: 400;
-  color: #000000;
-  text-shadow: 0.5px 0.5px;
+  color: #ffffff;
+ 
   font-family: "Noto Sans Arabic", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -537,7 +537,7 @@ body {
 
 .food-description p {
   font-size: 28px;
-  color: #000000;
+  color: #ffffff;
   font-weight: 500;
   
 }
@@ -787,13 +787,11 @@ body {
     right: -20px;
     font-size: 2rem;
     color: #ce2a2a;
-  }
-    
- font-family: "Noto Sans Arabic", sans-serif;
- font-optical-sizing: auto;
- font-weight: 600;
- font-style: normal;
- font-variation-settings:
+   font-family: "Noto Sans Arabic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+     font-variation-settings:
    "wdth" 100;
   }
 
@@ -893,7 +891,7 @@ body {
     margin: 3rem auto;
   }
 
- .logo {
+  .logo {
     position: absolute;
     top: -11px;
     right: 15px;
@@ -943,7 +941,7 @@ body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
-    background: linear-gradient(315deg, hsla(47, 77%, 60%, 0.918) 3%, hsl(216, 3%, 61%) 38%, #b12828 68%, rgb(111, 110, 110) 98%);
+    background: linear-gradient(315deg, hsl(0, 0%, 0%) 3%, hsl(0, 0%, 0%) 38%, #000000 68%, rgb(0, 0, 0) 98%);
     animation: gradient 10s ease infinite;
     background-size: 400% 400%;
     background-attachment: fixed;
